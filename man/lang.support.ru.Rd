@@ -4,7 +4,10 @@
 \alias{lang.support.ru}
 \title{Language support for Russian}
 \usage{
-lang.support.ru()
+lang.support.ru(...)
+}
+\arguments{
+\item{...}{Optional arguments for \code{\link[koRpus:set.lang.support]{set.lang.support}}.}
 }
 \description{
 This function adds support for Russian to the koRpus package. You should not
