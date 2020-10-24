@@ -1,4 +1,4 @@
-# Copyright 2010-2018 Meik Michalke <meik.michalke@hhu.de>
+# Copyright 2010-2020 Meik Michalke <meik.michalke@hhu.de>
 #
 # This file is part of the R package koRpus.lang.ru.
 #
@@ -51,14 +51,16 @@ lang.support.ru <- function(...) {
       lang="ru",
       encoding="UTF-8",
       preset=function(TT.cmd, TT.bin, TT.lib, unix.OS){
+        TT.tokenizer <- file.path(TT.cmd, "utf8-tokenize.perl")
+        TT.params    <- file.path(TT.lib, "russian.par")
         if(isTRUE(unix.OS)){
           # preset for unix systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger"),
               TT.abbrev         = c(),
-              TT.params         = file.path(TT.lib, "russian-utf8.par"),
+              TT.params         = TT.params,
 
               TT.tknz.opts      = c(),
               TT.lookup.command = c(),
@@ -69,10 +71,10 @@ lang.support.ru <- function(...) {
           # preset for windows systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger.exe"),
               TT.abbrev         = c(),
-              TT.params         = file.path(TT.lib, "russian-utf8.par"),
+              TT.params         = TT.params,
 
               TT.tknz.opts      = c(),
               TT.lookup.command = c(),

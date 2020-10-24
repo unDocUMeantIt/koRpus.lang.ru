@@ -2,30 +2,36 @@
 % Please edit documentation in R/koRpus.lang.ru-package.R
 \docType{package}
 \name{koRpus.lang.ru-package}
+\alias{koRpus.lang.ru}
 \alias{koRpus.lang.ru-package}
-\title{The koRpus.lang.ru Package}
+\title{\packageTitle{koRpus.lang.ru}}
 \description{
-Language Support for 'koRpus' Package: Russian.
+\packageDescription{koRpus.lang.ru}
 }
 \details{
+The DESCRIPTION file:
 \tabular{ll}{
 Package: \tab koRpus.lang.ru\cr
 Type: \tab Package\cr
 Version: \tab 0.1-2\cr
-Date: \tab 2018-02-21\cr
+Date: \tab 2020-10-24\cr
 Depends: \tab R (>= 3.1),koRpus (>= 0.11-2)\cr
 Encoding: \tab UTF-8\cr
 License: \tab GPL (>= 3)\cr
 LazyLoad: \tab yes\cr
 URL: \tab https://reaktanz.de/?c=hacking&s=koRpus\cr
 }
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://reaktanz.de/?c=hacking&s=koRpus}
+  \item Report bugs at \url{https://github.com/unDocUMeantIt/koRpus.lang.ru/issues}
+}
 
-Adds support for the Russian language to the 'koRpus' package. To ask for help, report
-bugs, suggest feature improvements, or discuss the global development of the package,
-      please
-consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
 }
 \author{
-Meik Michalke
+\packageAuthor{koRpus.lang.ru}
+
+Maintainer: \packageMaintainer{koRpus.lang.ru}
 }
-\keyword{package}
